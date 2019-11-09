@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "module": "commonjs",
+    "noEmit": true,
+    "strict": true,
+    "target": "es6"
+  }
+}

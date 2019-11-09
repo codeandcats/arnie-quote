@@ -1,0 +1,17 @@
+{
+  "commitPaths": ["./"],
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "yarn ts-node support/updatePackageVersion.ts ${nextRelease.version}",
+        "publishCmd": "support/publish.sh"
+      }
+    ],
+    "@semantic-release/git"
+  ],
+  "tagFormat": "arnie-quote_v${version}"
+}
