@@ -5,10 +5,15 @@
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
     [
+      "@semantic-release/npm",
+      {
+        "pkgRoot": "dist"
+      }
+    ],
+    [
       "@semantic-release/exec",
       {
-        "prepareCmd": "yarn ts-node support/updatePackageVersion.ts ${nextRelease.version}",
-        "publishCmd": "support/publish.sh"
+        "prepareCmd": "yarn ts-node support/prepareDistribution.ts"
       }
     ],
     "@semantic-release/git"
