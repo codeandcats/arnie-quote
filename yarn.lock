@@ -5684,10 +5684,10 @@ sax@^1.2.4:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
-semantic-release-plus@^16.0.2:
-  version "16.0.2"
-  resolved "https://registry.yarnpkg.com/semantic-release-plus/-/semantic-release-plus-16.0.2.tgz#22f9a8787d36e9ccb5ea76ab1bff47b201a76302"
-  integrity sha512-/nCg45aQCIYRga+g+MODyMoEqu3Ecc2cDRkTWxQ53Ypsi1ShMg1w0vJKo6fqG4eo0KZ0ltIrd9MsQDLsQFaEvg==
+semantic-release-plus@^16.0.3:
+  version "16.0.3"
+  resolved "https://registry.yarnpkg.com/semantic-release-plus/-/semantic-release-plus-16.0.3.tgz#94f75172cc6e87beb78fbb7514aeeec9cc10d352"
+  integrity sha512-aXY29c4g1uTFcIN3Lh5PTNrysJgCuQKKkfc1C/zRjp8AgXMed6Jhn2e5KVgSrNEY1+tnBYzrNzIpjb/uncbcHQ==
   dependencies:
     "@semantic-release/commit-analyzer" "^6.1.0"
     "@semantic-release/error" "^2.2.0"
@@ -5698,7 +5698,7 @@ semantic-release-plus@^16.0.2:
     cosmiconfig "^6.0.0"
     debug "^4.0.0"
     env-ci "^4.0.0"
-    execa "^1.0.0"
+    execa "^3.2.0"
     figures "^3.0.0"
     find-versions "^3.0.0"
     get-stream "^5.0.0"

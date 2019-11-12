@@ -1,7 +1,7 @@
 {
   "name": "arnie-quote-group",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "workspaces": {
     "packages": [
       "packages/*"
@@ -22,7 +22,7 @@
     "jest": "^24.9.0",
     "lec": "^1.0.1",
     "rimraf": "^3.0.0",
-    "semantic-release-plus": "^16.0.2",
+    "semantic-release-plus": "^16.0.3",
     "ts-jest": "^24.1.0",
     "ts-node": "^8.4.1",
     "typescript": "^3.7.2"
