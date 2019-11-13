@@ -8,12 +8,7 @@
     ["@semantic-release/npm", { "npmPublish": false }],
     ["@semantic-release/exec", { "publishCmd": "cp ./{package.json,CHANGELOG.md} ./dist/" }],
     ["@semantic-release/exec", { "publishCmd": "yarn ts-node ./support/prepareDistribution.ts" }],
-    [
-      "@semantic-release/exec",
-      {
-        "publishCmd": "echo \"//registry.npmjs.org/:_authToken=$NPM_TOKEN\" > ./dist/.npmrc && npm publish ./dist --access=public"
-      }
-    ],
+    ["@semantic-release/exec", { "publishCmd": "npm publish ./dist --access=public" }],
     "@semantic-release/git"
   ],
   "tagFormat": "arnie-quote_v${version}"
