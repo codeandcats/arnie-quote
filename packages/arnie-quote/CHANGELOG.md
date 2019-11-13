@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/codeandcats/arnie-quote/compare/arnie-quote_v1.1.0...arnie-quote_v1.2.0) (2019-11-13)
+
+
+### Features
+
+* **core:** add t3 quote ([aa24353](https://github.com/codeandcats/arnie-quote/commit/aa24353b777cba8e619e01796a193d5e573c6c5a))
+
 # [1.1.0](https://github.com/codeandcats/arnie-quote/compare/arnie-quote_v1.0.0...arnie-quote_v1.1.0) (2019-11-13)
 
 
