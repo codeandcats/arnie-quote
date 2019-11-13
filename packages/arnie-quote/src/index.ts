@@ -3,6 +3,7 @@ export const movies = [
   'Predator',
   'Terminator',
   'Terminator 2',
+  'T3: Rise of the Machines',
   'Total Recall',
   'True Lies',
 ] as const;
@@ -18,6 +19,7 @@ const quotes: Quote[] = [
   { value: "I'll be back", movie: 'Terminator' },
   { value: 'If it bleeds, we can kill it', movie: 'Predator' },
   { value: 'Hasta la vista, baby', movie: 'Terminator 2' },
+  { value: "She'll be back", movie: 'T3: Rise of the Machines' },
   { value: 'I need your clothes, your boots, and your motorcycle', movie: 'Terminator 2' },
   { value: 'Yeah, but they were all bad', movie: 'True Lies' },
   { value: "It's not a tumor!", movie: 'Kindergarden Cop' },
