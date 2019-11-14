@@ -1,15 +1,3 @@
 {
-  "commitPaths": ["./"],
-  "plugins": [
-    ["@semantic-release/exec", { "verifyConditionsCmd": "cp ./{package.json,README.md} ./dist/" }],
-    "@semantic-release/commit-analyzer",
-    "@semantic-release/release-notes-generator",
-    "@semantic-release/changelog",
-    ["@semantic-release/npm", { "npmPublish": false }],
-    ["@semantic-release/exec", { "publishCmd": "cp ./{package.json,CHANGELOG.md} ./dist/" }],
-    ["@semantic-release/exec", { "publishCmd": "yarn ts-node ./support/prepareDistribution.ts" }],
-    ["@semantic-release/exec", { "publishCmd": "npm publish ./dist --access=public" }],
-    "@semantic-release/git"
-  ],
-  "tagFormat": "arnie-quote_v${version}"
+  "extends": "../../.releaserc.json"
 }

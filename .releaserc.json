@@ -1,0 +1,20 @@
+{
+  "commitPaths": ["./"],
+  "plugins": [
+    ["@semantic-release/exec", { "verifyConditionsCmd": "cp ./{package.json} ./dist/" }],
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    ["@semantic-release/npm", { "npmPublish": false }],
+    [
+      "@semantic-release/exec",
+      {
+        "publishCmd": "cat package.json | yarn jqn \"entries | filter(([k]) => ['private', 'scripts', 'devDependencies'].includes(k) === false) | map(([k,v]) => k === 'main' ? [k, 'index.js'] : [k,v]) | map(([k,v]) => k === 'types' ? [k,'index.d.ts'] : [k,v]) | fromPairs\""
+      }
+    ],
+    ["@semantic-release/exec", { "publishCmd": "cp ./{CHANGELOG.md,README.md} ./dist/" }],
+    ["@semantic-release/npm", { "pkgRoot": "./dist" }],
+    "@semantic-release/git"
+  ],
+  "tagFormat": "arnie-quote_v${version}"
+}
