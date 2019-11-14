@@ -10,7 +10,6 @@
     "clean": "rimraf dist",
     "prebuild": "yarn clean",
     "build": "tsc -p tsconfig.main.json",
-    "postbuild": "cd ../.. && yarn fix-semantic-release-plus",
     "test": "jest --config jest.config.json",
     "validate": "yarn build && yarn test",
     "preship": "yarn validate",
