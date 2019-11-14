@@ -27,6 +27,7 @@ const quotes: Quote[] = [
   { value: 'Get to the choppa!', movie: 'Predator' },
   { value: "You're fired", movie: 'True Lies' },
   { value: 'Now get your ass to Mars', movie: 'Total Recall' },
+  { value: 'Consider that a divorce', movie: 'Total Recall' },
 ];
 
 export interface RandomQuoteOptions {

@@ -24,7 +24,7 @@ describe('getRandomQuote', () => {
       getRandomQuote({
         movies: ['Kindergarden Cop', 'Total Recall'],
       }),
-    ).toEqual('Now get your ass to Mars');
+    ).toEqual('Consider that a divorce');
 
     jest.spyOn(Math, 'random').mockReturnValue(0.111);
     expect(
